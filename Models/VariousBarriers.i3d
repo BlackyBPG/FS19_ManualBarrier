@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="12" filename="shaders/emissiveLightsShader.xml"/>
+    <File fileId="20" filename="textures/barndoor_diffuse.dds"/>
+    <File fileId="21" filename="textures/barndoor_normal.dds"/>
+    <File fileId="13" filename="textures/barrier_chain.dds"/>
+    <File fileId="7" filename="textures/barrier_diffuse.dds"/>
+    <File fileId="2" filename="textures/barrier_grey_diffuse.dds"/>
+    <File fileId="3" filename="textures/barrier_grey_normal.dds"/>
+    <File fileId="5" filename="textures/barrier_grey_yellow_diffuse.dds"/>
+    <File fileId="4" filename="textures/barrier_specular.dds"/>
+    <File fileId="6" filename="textures/barrier_yellow_diffuse.dds"/>
+    <File fileId="28" filename="textures/beaconlight_diffuse.dds"/>
+    <File fileId="29" filename="textures/beaconlight_normal.dds"/>
+    <File fileId="31" filename="textures/beaconlightalpha_diffuse.dds"/>
+    <File fileId="32" filename="textures/beaconlightalpha_normal.dds"/>
+    <File fileId="11" filename="textures/coronaorange_diffuse.dds"/>
+    <File fileId="22" filename="textures/hallentor.ogg"/>
+    <File fileId="18" filename="textures/metall.dds"/>
+    <File fileId="14" filename="textures/polebarn01_diffuse.dds"/>
+    <File fileId="15" filename="textures/polebarn01_normal.dds"/>
+    <File fileId="10" filename="textures/rleucht.dds"/>
+    <File fileId="36" filename="textures/rollgate.ogg"/>
+    <File fileId="24" filename="textures/rollgate_diffuse.dds"/>
+    <File fileId="25" filename="textures/rollgate_normal.dds"/>
+    <File fileId="26" filename="textures/rollgate_specular.dds"/>
+    <File fileId="9" filename="textures/rul.dds"/>
+    <File fileId="34" filename="textures/schild_close_8_18.dds"/>
+    <File fileId="35" filename="textures/schild_close_8_18_specular.dds"/>
+    <File fileId="16" filename="textures/windowglass_diffuse.dds"/>
+    <File fileId="17" filename="textures/windowglass_specular.dds"/>
+    <File fileId="27" filename="textures/zahnstange_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="gray_mat" materialId="4" diffuseColor="0.584314 0.584314 0.584314 1">
+    </Material>
+    <Material name="mat" materialId="5" diffuseColor="1 1 1 1" specularColor="1 1 1">
+    </Material>
+    <Material name="mat" materialId="6" alphaBlending="true">
+      <Texture fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="mat" materialId="7" alphaBlending="true">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="rollgate_mat" materialId="8">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="mat" materialId="9">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+    </Material>
+    <Material name="mat" materialId="10" alphaBlending="true">
+      <Texture fileId="34"/>
+      <Glossmap fileId="35"/>
+    </Material>
+    <Material name="lambert1" materialId="11" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="barrier_mat" materialId="12">
+      <Texture fileId="6"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="barrier_old_mat" materialId="13">
+      <Texture fileId="7"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="barrier_mat" materialId="14">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="barrier_mat" materialId="15">
+      <Texture fileId="5"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="black" materialId="16" diffuseColor="0 0 0 1">
+    </Material>
+    <Material name="mat" materialId="17">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="new_coronaOrange_mat" materialId="18" alphaBlending="true" customShaderId="12" customShaderVariation="BILLBOARD">
+      <Emissivemap fileId="11"/>
+      <CustomParameter name="blinkOffset" value="0 0 0 0"/>
+    </Material>
+    <Material name="chain_mat" materialId="19">
+      <Texture fileId="13"/>
+    </Material>
+    <Material name="barrier_mat" materialId="20">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="beaconGlass" materialId="21" specularColor="1 1 1" alphaBlending="true">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+    </Material>
+    <Material name="beaconRotator" materialId="22" specularColor="0.811765 1 0.811765">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+    </Material>
+    <Material name="zahnstange_mat" materialId="23" alphaBlending="true">
+      <Texture fileId="27"/>
+    </Material>
+    <Material name="mat" materialId="24" alphaBlending="true">
+      <Texture fileId="10"/>
+      <Emissivemap fileId="10"/>
+    </Material>
+    <Material name="mat" materialId="25">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+    </Material>
+    <Material name="mat" materialId="26" specularColor="0.0941177 1 0.0941177">
+      <Texture fileId="18"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="VariousBarriers.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="variousBarriers" nodeId="86">
+      <TransformGroup name="barrier11_5grey" translation="-17 0 20" nodeId="87">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="88" materialIds="11" nonRenderable="true">
+          <Shape shapeId="2" name="barrierHolderGrey" translation="4 0 0" static="true" clipDistance="350" nodeId="89" materialIds="14" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="90" materialIds="14" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="4" name="barrierBar" kinematic="true" clipDistance="350" nodeId="91" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-7.5 0 0" static="true" clipDistance="350" nodeId="92" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier11_5grey_yellow" translation="-2 0 20" nodeId="93">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="94" materialIds="11" nonRenderable="true">
+          <Shape shapeId="2" name="barrierHolderGreyYellow" translation="4 0 0" static="true" clipDistance="350" nodeId="95" materialIds="15" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="96" materialIds="15" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="4" name="barrierBar" kinematic="true" clipDistance="350" nodeId="97" materialIds="15" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-7.5 0 0" static="true" clipDistance="350" nodeId="98" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier11_5yellow" translation="11 0 20" nodeId="99">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="100" materialIds="12" nonRenderable="true">
+          <Shape shapeId="2" name="barrierHolderYellow" translation="4 0 0" static="true" clipDistance="350" nodeId="101" materialIds="12" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="102" materialIds="12" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="4" name="barrierBar" kinematic="true" clipDistance="350" nodeId="103" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-7.5 0 0" static="true" clipDistance="350" nodeId="104" materialIds="12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier11_5" translation="25 0 20" nodeId="105">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="106" materialIds="11" nonRenderable="true">
+          <Shape shapeId="2" name="barrierHolderOld" translation="4 0 0" static="true" clipDistance="350" nodeId="107" materialIds="13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="108" materialIds="13" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="4" name="barrierBar" kinematic="true" clipDistance="350" nodeId="109" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-7.5 0 0" static="true" clipDistance="350" nodeId="110" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier8_5grey" translation="35 0 20" nodeId="111">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="112" materialIds="11" nonRenderable="true">
+          <Shape shapeId="6" name="barrierHolderGrey" translation="4 0 0" static="true" clipDistance="350" nodeId="113" materialIds="14" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="114" materialIds="14" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="8" name="barrierBar" kinematic="true" clipDistance="350" nodeId="115" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-4.5 0 0" static="true" clipDistance="350" nodeId="116" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier8_5grey_yellow" translation="45 0 20" nodeId="117">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="118" materialIds="11" nonRenderable="true">
+          <Shape shapeId="6" name="barrierHolderGreyYellow" translation="4 0 0" static="true" clipDistance="350" nodeId="119" materialIds="15" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="120" materialIds="15" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="8" name="barrierBar" kinematic="true" clipDistance="350" nodeId="121" materialIds="15" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-4.5 0 0" static="true" clipDistance="350" nodeId="122" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier8_5yellow" translation="55 0 20" nodeId="123">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="124" materialIds="12" nonRenderable="true">
+          <Shape shapeId="6" name="barrierHolderYellow" translation="4 0 0" static="true" clipDistance="350" nodeId="125" materialIds="12" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="126" materialIds="12" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="8" name="barrierBar" kinematic="true" clipDistance="350" nodeId="127" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-4.5 0 0" static="true" clipDistance="350" nodeId="128" materialIds="12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier8_5" translation="65 0 20" nodeId="129">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="130" materialIds="11" nonRenderable="true">
+          <Shape shapeId="6" name="barrierHolderOld" translation="4 0 0" static="true" clipDistance="350" nodeId="131" materialIds="13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="132" materialIds="13" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="8" name="barrierBar" kinematic="true" clipDistance="350" nodeId="133" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-4.5 0 0" static="true" clipDistance="350" nodeId="134" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier6grey" translation="-20 0 -20" nodeId="135">
+        <Shape shapeId="9" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="136" materialIds="11" nonRenderable="true">
+          <Shape shapeId="10" name="barrierHolderGrey" translation="3 0 0" static="true" clipDistance="350" nodeId="137" materialIds="14" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="barrierBarHolder" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="138" materialIds="14" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="12" name="barrierBar" kinematic="true" clipDistance="350" nodeId="139" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-3 0 0" static="true" clipDistance="350" nodeId="140" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier6grey_yellow" translation="-13 0 -20" nodeId="141">
+        <Shape shapeId="9" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="142" materialIds="11" nonRenderable="true">
+          <Shape shapeId="10" name="barrierHolderGreyYellow" translation="3 0 0" static="true" clipDistance="350" nodeId="143" materialIds="15" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="barrierBarHolder" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="144" materialIds="15" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="12" name="barrierBar" kinematic="true" clipDistance="350" nodeId="145" materialIds="15" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-3 0 0" static="true" clipDistance="350" nodeId="146" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier6yellow" translation="-6 0 -20" nodeId="147">
+        <Shape shapeId="9" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="148" materialIds="12" nonRenderable="true">
+          <Shape shapeId="10" name="barrierHolderYellow" translation="3 0 0" static="true" clipDistance="350" nodeId="149" materialIds="12" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="barrierBarHolder" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="150" materialIds="12" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="12" name="barrierBar" kinematic="true" clipDistance="350" nodeId="151" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-3 0 0" static="true" clipDistance="350" nodeId="152" materialIds="12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier6" translation="1 0 -20" nodeId="153">
+        <Shape shapeId="9" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="154" materialIds="11" nonRenderable="true">
+          <Shape shapeId="10" name="barrierHolder" translation="3 0 0" static="true" clipDistance="350" nodeId="155" materialIds="13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="barrierBarHolder" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="156" materialIds="13" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="12" name="barrierBar" kinematic="true" clipDistance="350" nodeId="157" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="5" name="barrierStand" translation="-3 0 0" static="true" clipDistance="350" nodeId="158" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier4grey" translation="7 0 -20" nodeId="159">
+        <Shape shapeId="13" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="160" materialIds="11" nonRenderable="true">
+          <Shape shapeId="14" name="barrierHolderGrey" translation="2 0 0" static="true" clipDistance="350" nodeId="161" materialIds="14" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="15" name="barrierBarHolder" translation="0 0.8169 -0.161" kinematic="true" clipDistance="350" nodeId="162" materialIds="14" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="16" name="barrierBar" kinematic="true" clipDistance="350" nodeId="163" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="17" name="barrierStand" translation="-2 0 -0.193" static="true" clipDistance="350" nodeId="164" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier4grey_yellow" translation="12 0 -20" nodeId="165">
+        <Shape shapeId="13" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="166" materialIds="11" nonRenderable="true">
+          <Shape shapeId="14" name="barrierHolderGreyYellow" translation="2 0 0" static="true" clipDistance="350" nodeId="167" materialIds="15" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="15" name="barrierBarHolder" translation="0 0.8169 -0.16123" kinematic="true" clipDistance="350" nodeId="168" materialIds="15" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="16" name="barrierBar" kinematic="true" clipDistance="350" nodeId="169" materialIds="15" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="17" name="barrierStand" translation="-2 0 -0.193" static="true" clipDistance="350" nodeId="170" materialIds="15" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier4yellow" translation="17 0 -20" nodeId="171">
+        <Shape shapeId="13" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="172" materialIds="12" nonRenderable="true">
+          <Shape shapeId="14" name="barrierHolderYellow" translation="2 0 0" static="true" clipDistance="350" nodeId="173" materialIds="12" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="15" name="barrierBarHolder" translation="0 0.8169 -0.16123" kinematic="true" clipDistance="350" nodeId="174" materialIds="12" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="16" name="barrierBar" kinematic="true" clipDistance="350" nodeId="175" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="17" name="barrierStand" translation="-2 0 -0.193" static="true" clipDistance="350" nodeId="176" materialIds="12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="barrier4" translation="22 0 -20" nodeId="177">
+        <Shape shapeId="13" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="178" materialIds="11" nonRenderable="true">
+          <Shape shapeId="14" name="barrierHolder" translation="2 0 0" static="true" clipDistance="350" nodeId="179" materialIds="13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="15" name="barrierBarHolder" translation="0 0.8169 -0.16123" kinematic="true" clipDistance="350" nodeId="180" materialIds="13" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="16" name="barrierBar" kinematic="true" clipDistance="350" nodeId="181" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="17" name="barrierStand" translation="-2 0 -0.193" static="true" clipDistance="350" nodeId="182" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="18" name="barrierWithRandomCloseTimes" translation="33 0 -20" static="true" trigger="true" collisionMask="14680064" clipDistance="250" nodeId="183" materialIds="4" nonRenderable="true">
+        <Shape shapeId="2" name="barrierHolderOld" translation="4 0 0" static="true" clipDistance="350" nodeId="184" materialIds="13" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="barrierBarHolderWeight" translation="0 0.8169 0" kinematic="true" clipDistance="350" nodeId="185" materialIds="13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="barrierBar" kinematic="true" clipDistance="350" nodeId="186" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <TransformGroup name="RulHalterung1" translation="0.0089038 1.07699 0.140051" nodeId="187">
+            <Shape shapeId="19" name="RulHalterung1" clipDistance="250" nodeId="188" materialIds="17" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="transform" rotation="0 -3.8391e-13 0" nodeId="189">
+                <Shape shapeId="20" name="Reflektor" translation="0.0013305 0.121882 -2.59785e-10" rotation="-8.00413e-08 -4.00206e-08 0" clipDistance="250" nodeId="190" materialIds="17" castsShadows="true" receiveShadows="true">
+                  <TransformGroup name="beaconLight1" translation="0 -0.0481123 0" clipDistance="250" nodeId="191">
+                    <Shape shapeId="21" name="leucht" translation="-1.53101e-09 -0.02806 -0.0175128" rotation="0 180 0" clipDistance="250" nodeId="192" materialIds="24" castsShadows="true" receiveShadows="true">
+                      <Light name="light" translation="0 0.135427 0.02" rotation="0 180 0" nodeId="193" type="spot" color="1 0.54 0" emitDiffuse="true" emitSpecular="true" decayRate="4" range="20" coneAngle="120" dropOff="5"/>
+                      <Shape shapeId="22" name="orange" translation="0 0.135743 0.00591247" scale="0.4 0.4 0.5" nodeId="194" materialIds="18"/>
+                    </Shape>
+                    <Shape shapeId="21" name="leucht" translation="-1.53101e-09 -0.02806 0.0184897" clipDistance="250" nodeId="195" materialIds="24" castsShadows="true" receiveShadows="true">
+                      <Shape shapeId="22" name="orange" translation="0 0.135743 0.00591247" scale="0.4 0.4 0.5" nodeId="196" materialIds="18"/>
+                    </Shape>
+                  </TransformGroup>
+                  <Shape shapeId="20" name="Reflektor" rotation="180 0 -180" clipDistance="250" nodeId="197" materialIds="17" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="23" name="Glas" translation="0 0.187302 0" clipDistance="250" nodeId="198" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="barrierStand" translation="-7.5 0 0" static="true" clipDistance="350" nodeId="199" materialIds="14" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <TransformGroup name="animatedBarrier" translation="46 0 -20" nodeId="200">
+        <Shape shapeId="1" name="barrierTrigger" static="true" trigger="true" collisionMask="133169152" clipDistance="350" nodeId="201" materialIds="11" nonRenderable="true">
+          <Shape shapeId="24" name="barrierHolderYellow" translation="4 0 0" rotation="0 180 0" static="true" clipDistance="350" nodeId="202" materialIds="13" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="rotationPart" translation="0 0.985 0" nodeId="203">
+              <Shape shapeId="25" name="barrierBarHolderWeight" kinematic="true" clipDistance="350" nodeId="204" materialIds="13" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="26" name="barrier" kinematic="true" collisionMask="8447" clipDistance="300" nodeId="205" materialIds="13" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="27" name="joist" translation="5.57141 -0.799463 0.175556" kinematic="true" collisionMask="8447" clipDistance="300" nodeId="206" materialIds="20" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain1" translation="1.36721 -0.0561828 0.175996" clipDistance="300" nodeId="207" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain2" translation="1.89221 -0.0561828 0.175996" clipDistance="300" nodeId="208" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain3" translation="2.41721 -0.0561828 0.175996" clipDistance="300" nodeId="209" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain4" translation="2.94221 -0.0561828 0.175996" clipDistance="300" nodeId="210" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain5" translation="3.46721 -0.0561828 0.175996" clipDistance="300" nodeId="211" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain6" translation="3.99221 -0.0561828 0.175996" clipDistance="300" nodeId="212" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain7" translation="4.51721 -0.0561828 0.175996" clipDistance="300" nodeId="213" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain8" translation="5.04221 -0.0561828 0.175996" clipDistance="300" nodeId="214" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain9" translation="5.56721 -0.0561828 0.175996" clipDistance="300" nodeId="215" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain10" translation="6.09221 -0.0561828 0.175996" clipDistance="300" nodeId="216" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain11" translation="6.61721 -0.0561828 0.175996" clipDistance="300" nodeId="217" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain12" translation="7.14221 -0.0561828 0.175996" clipDistance="300" nodeId="218" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain13" translation="7.66721 -0.0561828 0.175996" clipDistance="300" nodeId="219" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain14" translation="8.19221 -0.0561828 0.175996" clipDistance="300" nodeId="220" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain15" translation="8.71721 -0.0561828 0.175996" clipDistance="300" nodeId="221" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain16" translation="9.24221 -0.0561828 0.175996" clipDistance="300" nodeId="222" materialIds="19" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="28" name="chain17" translation="9.76721 -0.0561828 0.175996" clipDistance="300" nodeId="223" materialIds="19" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <Shape shapeId="29" name="barrierStand" translation="11.5 0 0.174669" static="true" clipDistance="350" nodeId="224" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="30" name="poleBarnWithAnimatedGates" translation="-50 0 0" static="true" nodeId="225" materialIds="9,6" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="31" name="Hallentor_links" translation="20.111 0 0" kinematic="true" trigger="true" clipDistance="300" nodeId="226" materialIds="11" nonRenderable="true">
+          <Shape shapeId="32" name="Sektion_1" translation="0.0902 3.45426 9.13496" kinematic="true" clipDistance="250" nodeId="227" materialIds="26,25,6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="33" name="tor" translation="-0.09293 0 -3.042" kinematic="true" clipDistance="250" nodeId="228" materialIds="26,25" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="32" name="tor_mit_fenster" translation="0.0902 0 -3.042" kinematic="true" clipDistance="250" nodeId="229" materialIds="26,25,6" castsShadows="true" receiveShadows="true">
+                <AudioSource name="audio" translation="0 -3.19338 0" nodeId="230" fileId="22" range="15" innerRange="10" volume="1" loops="1"/>
+              </Shape>
+            </Shape>
+          </Shape>
+          <TransformGroup name="placeholder_colliBox" translation="0 0 9.2" nodeId="232"/>
+        </Shape>
+        <Shape shapeId="34" name="Hallentor_rechts" translation="20.1109 0 0" kinematic="true" trigger="true" clipDistance="300" nodeId="233" materialIds="11" nonRenderable="true">
+          <Shape shapeId="35" name="Sektion_1" translation="0.0904 3.45426 -9.13861" clipDistance="250" nodeId="234" materialIds="26,25" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="36" name="trigger_singledoor" translation="-0.0904 -1.553 2.22099" rotation="-90 0 0" kinematic="true" trigger="true" clipDistance="250" nodeId="235" materialIds="11" nonRenderable="true">
+              <TransformGroup name="ankerpunkt" translation="0.0646578 0.665801 -0.190455" clipDistance="250" nodeId="236">
+                <TransformGroup name="drehpunkt" rotation="0 0 155" clipDistance="250" nodeId="237">
+                  <Shape shapeId="37" name="tuer" rotation="90 0 0" kinematic="true" clipDistance="250" nodeId="238" materialIds="26,25" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="38" name="tor" translation="-0.09293 0 3.042" kinematic="true" clipDistance="250" nodeId="239" materialIds="26,25" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="39" name="tor_mit_fenster" translation="0.0902 0 3.042" kinematic="true" clipDistance="250" nodeId="240" materialIds="26,25,6" castsShadows="true" receiveShadows="true">
+                <AudioSource name="audio" translation="0 -3.19338 0" nodeId="241" fileId="22" range="15" innerRange="10" volume="1" loops="1"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="40" name="colli" translation="0.05 -1.5 0.1" kinematic="true" clipDistance="100" nodeId="243" materialIds="26,25" nonRenderable="true"/>
+          </Shape>
+          <TransformGroup name="placeholder_colliBox" translation="0 0 -9.2" nodeId="244"/>
+        </Shape>
+        <Shape shapeId="41" name="schienen" translation="20.1566 3.45005 0" static="true" clipDistance="200" nodeId="245" materialIds="26" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <TransformGroup name="rollingGateSmallReverse" translation="55 -0.25 -20" clipDistance="300" nodeId="246">
+        <Shape shapeId="42" name="gate_trigger" static="true" trigger="true" collisionMask="133169152" clipDistance="250" nodeId="247" materialIds="5" nonRenderable="true"/>
+        <Shape shapeId="43" name="rollgate_drive" translation="8.0858 0 -0.349" rotation="0 180 0" nodeId="248" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="44" name="rollgate_wheel" translation="0.01042 0.424061 -0.26316" nodeId="249" materialIds="8,23" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="45" name="beaconLight" translation="7.11793 2.47544 0" clipDistance="250" nodeId="250" materialIds="22" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="rotator" clipDistance="250" nodeId="251" materialIds="22" receiveShadows="true">
+            <TransformGroup name="coronas" translation="0 0.0319167 0.0144785" clipDistance="250" nodeId="252">
+              <Shape shapeId="47" name="backLights_corona_main" nodeId="253" materialIds="18"/>
+              <Shape shapeId="48" name="backLights_corona_side1" nodeId="254" materialIds="18"/>
+              <Shape shapeId="49" name="backLights_corona_side2" nodeId="255" materialIds="18"/>
+              <Shape shapeId="50" name="backLights_corona_side3" nodeId="256" materialIds="18"/>
+              <Light name="light" translation="0 0.0506366 0" rotation="0 180 0" clipDistance="250" nodeId="257" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="10" coneAngle="60" dropOff="2"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="51" name="glass" translation="-3.51212e-09 0 1.95118e-10" clipDistance="250" nodeId="258" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="52" name="rollgate_ground" clipDistance="300" nodeId="259" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="53" name="rollgate_fence" kinematic="true" collisionMask="8447" clipDistance="300" nodeId="260" materialIds="23,8" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="closed" translation="3.31429 0 0" clipDistance="250" nodeId="261">
+              <Shape shapeId="54" name="TorSchild" translation="-0.09784 1.30676 0.03967" scale="6 6 6" clipDistance="250" nodeId="262" materialIds="16,10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="54" name="TorSchild" translation="-0.09784 1.30676 -0.03967" rotation="0 180 0" scale="6 6 6" clipDistance="250" nodeId="263" materialIds="16,10" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <AudioSource name="audio" visibility="false" nodeId="264" fileId="36" range="100" innerRange="30" volume="1" loops="0"/>
+      </TransformGroup>
+      <TransformGroup name="rollingGateSmall" translation="72 -0.25 -7.24347" rotation="0 90 0" clipDistance="300" nodeId="266">
+        <Shape shapeId="42" name="gate_trigger" static="true" trigger="true" collisionMask="133169152" clipDistance="250" nodeId="267" materialIds="5" nonRenderable="true"/>
+        <Shape shapeId="43" name="rollgate_drive" translation="8.0858 0 0.349308" nodeId="268" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="44" name="rollgate_wheel" translation="0.01042 0.424061 -0.26316" nodeId="269" materialIds="8,23" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="45" name="beaconLight" translation="7.11793 2.47544 0" clipDistance="250" nodeId="270" materialIds="22" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="rotator" clipDistance="250" nodeId="271" materialIds="22" receiveShadows="true">
+            <TransformGroup name="coronas" translation="0 0.0319167 0.0144785" clipDistance="250" nodeId="272">
+              <Shape shapeId="47" name="backLights_corona_main" nodeId="273" materialIds="18"/>
+              <Shape shapeId="48" name="backLights_corona_side1" nodeId="274" materialIds="18"/>
+              <Shape shapeId="49" name="backLights_corona_side2" nodeId="275" materialIds="18"/>
+              <Shape shapeId="50" name="backLights_corona_side3" nodeId="276" materialIds="18"/>
+              <Light name="light" translation="0 0.0506366 0" rotation="0 180 0" clipDistance="250" nodeId="277" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="10" coneAngle="60" dropOff="2"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="51" name="glass" translation="-3.51212e-09 0 1.95118e-10" clipDistance="250" nodeId="278" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="55" name="rollgate_ground" clipDistance="300" nodeId="279" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="56" name="rollgate_fence" kinematic="true" collisionMask="8447" clipDistance="300" nodeId="280" materialIds="23,8" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="closed" translation="3.31429 0 0" clipDistance="250" nodeId="281">
+              <Shape shapeId="54" name="TorSchild" translation="-0.09784 1.30676 0.03967" scale="6 6 6" clipDistance="250" nodeId="282" materialIds="16,10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="54" name="TorSchild" translation="-0.09784 1.30676 -0.03967" rotation="0 180 0" scale="6 6 6" clipDistance="250" nodeId="283" materialIds="16,10" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <AudioSource name="audio" visibility="false" nodeId="284" fileId="36" range="100" innerRange="30" volume="1" loops="0"/>
+      </TransformGroup>
+      <TransformGroup name="rollingGateBig" translation="72 -0.25 2.20144" rotation="0 -90 0" nodeId="286">
+        <Shape shapeId="42" name="gate_trigger" static="true" trigger="true" collisionMask="133169152" clipDistance="250" nodeId="287" materialIds="5" nonRenderable="true"/>
+        <Shape shapeId="43" name="rollgate_drive" translation="8.0858 0 0.349308" nodeId="288" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="44" name="rollgate_wheel" translation="0.01042 0.424061 -0.26316" nodeId="289" materialIds="8,23" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="45" name="beaconLight" translation="7.11793 2.47544 0" clipDistance="250" nodeId="290" materialIds="22" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="rotator" clipDistance="250" nodeId="291" materialIds="22" receiveShadows="true">
+            <TransformGroup name="coronas" translation="0 0.0319167 0.0144785" clipDistance="250" nodeId="292">
+              <Shape shapeId="47" name="backLights_corona_main" nodeId="293" materialIds="18"/>
+              <Shape shapeId="48" name="backLights_corona_side1" nodeId="294" materialIds="18"/>
+              <Shape shapeId="49" name="backLights_corona_side2" nodeId="295" materialIds="18"/>
+              <Shape shapeId="50" name="backLights_corona_side3" nodeId="296" materialIds="18"/>
+              <Light name="light" translation="0 0.0506366 0" rotation="0 180 0" clipDistance="250" nodeId="297" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="4" range="10" coneAngle="60" dropOff="2"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="51" name="glass" translation="-3.51212e-09 0 1.95118e-10" clipDistance="250" nodeId="298" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="57" name="rollgate_ground" clipDistance="250" nodeId="299" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="58" name="rollgate_fence" kinematic="true" collisionMask="8447" clipDistance="300" nodeId="300" materialIds="23,8" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="closed" clipDistance="250" nodeId="301">
+              <Shape shapeId="54" name="TorSchild" translation="-0.09784 1.30676 0.03967" scale="6 6 6" clipDistance="250" nodeId="302" materialIds="16,10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="54" name="TorSchild" translation="-0.09784 1.30676 -0.03967" rotation="0 180 0" scale="6 6 6" clipDistance="250" nodeId="303" materialIds="16,10" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </Shape>
+        </Shape>
+        <AudioSource name="audio" visibility="false" nodeId="304" fileId="36" range="100" innerRange="30" volume="1" loops="0"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+
+  <Animation externalAnimFile="VariousBarriers.i3d.anim" />
+  <UserAttributes>
+    <UserAttribute nodeId="87">
+      <Attribute name="manualBarrierId" type="integer" value="1"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="93">
+      <Attribute name="manualBarrierId" type="integer" value="2"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="99">
+      <Attribute name="manualBarrierId" type="integer" value="3"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="105">
+      <Attribute name="manualBarrierId" type="integer" value="4"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="111">
+      <Attribute name="manualBarrierId" type="integer" value="5"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="117">
+      <Attribute name="manualBarrierId" type="integer" value="6"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="123">
+      <Attribute name="manualBarrierId" type="integer" value="7"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="129">
+      <Attribute name="manualBarrierId" type="integer" value="8"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135">
+      <Attribute name="manualBarrierId" type="integer" value="9"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="141">
+      <Attribute name="manualBarrierId" type="integer" value="10"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="147">
+      <Attribute name="manualBarrierId" type="integer" value="11"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="153">
+      <Attribute name="manualBarrierId" type="integer" value="12"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="159">
+      <Attribute name="manualBarrierId" type="integer" value="13"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="165">
+      <Attribute name="manualBarrierId" type="integer" value="14"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="171">
+      <Attribute name="manualBarrierId" type="integer" value="15"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="177">
+      <Attribute name="manualBarrierId" type="integer" value="16"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="minZAngle" type="float" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="183">
+      <Attribute name="lightIndex" type="string" value="0|1|0|0|0|0"/>
+      <Attribute name="lightOnMove" type="boolean" value="true"/>
+      <Attribute name="manualBarrierId" type="integer" value="17"/>
+      <Attribute name="maxZAngle" type="float" value="-90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="randomChance" type="integer" value="10"/>
+      <Attribute name="randomClose" type="boolean" value="true"/>
+      <Attribute name="randomLight" type="boolean" value="true"/>
+      <Attribute name="randomRotate" type="boolean" value="true"/>
+      <Attribute name="randomText1" type="string" value="default_noentry_msg"/>
+      <Attribute name="randomText2" type="string" value="default_noentry_msg"/>
+      <Attribute name="randomText3" type="string" value="default_noentry_msg"/>
+      <Attribute name="rotationObjectAxis" type="integer" value="2"/>
+      <Attribute name="rotationObjectIndex" type="string" value="0|1|0|0|0"/>
+      <Attribute name="rotationObjectSpeed" type="float" value="15"/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+      <Attribute name="typeLight" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="193">
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.PerformanceLights"/>
+    </UserAttribute>
+    <UserAttribute nodeId="200">
+      <Attribute name="allowTraffic" type="boolean" value="true"/>
+      <Attribute name="animationClip" type="string" value="barrierChains"/>
+      <Attribute name="animatorDirection" type="integer" value="1"/>
+      <Attribute name="animatorIndex" type="string" value="0|0|0"/>
+      <Attribute name="manualBarrierId" type="integer" value="18"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="speedScale" type="float" value="80"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeAnimated" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="226">
+      <Attribute name="animationClip" type="string" value="hallentor"/>
+      <Attribute name="animatorIndex" type="string" value="0"/>
+      <Attribute name="audioIndex" type="string" value="0|0|0|0"/>
+      <Attribute name="farmLandRestricted" type="boolean" value="true"/>
+      <Attribute name="manualBarrierId" type="integer" value="19"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="speedScale" type="float" value="25"/>
+      <Attribute name="string_Name" type="string" value="string_GATE"/>
+      <Attribute name="typeAnimated" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="233">
+      <Attribute name="animationClip" type="string" value="hallentor"/>
+      <Attribute name="animatorIndex" type="string" value="0"/>
+      <Attribute name="audioIndex" type="string" value="0|1|0|0"/>
+      <Attribute name="farmLandRestricted" type="boolean" value="true"/>
+      <Attribute name="manualBarrierId" type="integer" value="20"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="speedScale" type="float" value="20"/>
+      <Attribute name="string_Name" type="string" value="string_GATE"/>
+      <Attribute name="typeAnimated" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="235">
+      <Attribute name="manualBarrierId" type="integer" value="21"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="maxZAngle" type="float" value="155"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="string_Name" type="string" value="string_DOOR"/>
+      <Attribute name="triggerIndex" type="string" value=""/>
+      <Attribute name="typeBarrier" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="246">
+      <Attribute name="animationClip" type="string" value="rollgate_rul"/>
+      <Attribute name="animatorIndex" type="string" value="1|0"/>
+      <Attribute name="audioIndex" type="string" value="4"/>
+      <Attribute name="automaticClose" type="string" value="17"/>
+      <Attribute name="automaticMode" type="boolean" value="true"/>
+      <Attribute name="automaticOpen" type="string" value="7.5"/>
+      <Attribute name="closeSymbol" type="string" value="3|0|0"/>
+      <Attribute name="lightIndex" type="string" value="2|0|0"/>
+      <Attribute name="lightOnMove" type="boolean" value="true"/>
+      <Attribute name="manualBarrierId" type="integer" value="22"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="speedScale" type="float" value="150"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeAnimated" type="boolean" value="true"/>
+      <Attribute name="typeLight" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="266">
+      <Attribute name="animationClip" type="string" value="rollgate_rul"/>
+      <Attribute name="animatorIndex" type="string" value="1|0"/>
+      <Attribute name="audioIndex" type="string" value="4"/>
+      <Attribute name="automaticClose" type="string" value="20"/>
+      <Attribute name="automaticMode" type="boolean" value="true"/>
+      <Attribute name="automaticOpen" type="string" value="6.5"/>
+      <Attribute name="closeSymbol" type="string" value="3|0|0"/>
+      <Attribute name="lightIndex" type="string" value="2|0|0"/>
+      <Attribute name="lightOnMove" type="boolean" value="true"/>
+      <Attribute name="manualBarrierId" type="integer" value="23"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="speedScale" type="float" value="175"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeAnimated" type="boolean" value="true"/>
+      <Attribute name="typeLight" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="286">
+      <Attribute name="animationClip" type="string" value="rollgate_rul"/>
+      <Attribute name="animatorIndex" type="string" value="1|0"/>
+      <Attribute name="audioIndex" type="string" value="4"/>
+      <Attribute name="automaticClose" type="string" value="16.75"/>
+      <Attribute name="automaticMode" type="boolean" value="true"/>
+      <Attribute name="automaticOpen" type="string" value="8.25"/>
+      <Attribute name="closeSymbol" type="string" value="3|0|0"/>
+      <Attribute name="lightIndex" type="string" value="2|0|0"/>
+      <Attribute name="lightOnMove" type="boolean" value="true"/>
+      <Attribute name="manualBarrierId" type="integer" value="24"/>
+      <Attribute name="manualOpen" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.ManualBarrier"/>
+      <Attribute name="speedScale" type="float" value="225"/>
+      <Attribute name="triggerIndex" type="string" value="0"/>
+      <Attribute name="typeAnimated" type="boolean" value="true"/>
+      <Attribute name="typeLight" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

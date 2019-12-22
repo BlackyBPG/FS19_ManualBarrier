@@ -1,0 +1,31 @@
+
+	<extraSourceFiles>
+		<sourceFile filename="scripts/ManualBarrier.lua" />
+	</extraSourceFiles>
+
+	<l10n>
+		<text name="OPEN_GATE"><en>Open gate</en><de>Tor öffnen</de></text>
+		<text name="default_noentry_msg"><en><![CDATA[We are closed due to a disturbance at the moment. We expect to open again at ]]></en><de><![CDATA[Momentan haben wir Aufgrund einer Störung geschlossen. Wir öffnen voraussichtlich wieder gegen ]]></de></text>
+		<text name="default_noentry_clock"><en><![CDATA[o Clock ]]></en><de><![CDATA[ Uhr.]]></de></text>
+		<text name="string_OPEN"><en>open</en><de>öffnen</de></text>
+		<text name="string_CLOSE"><en>close</en><de>schließen</de></text>
+		<text name="string_ON"><en>switch on</en><de>anschalten</de></text>
+		<text name="string_OFF"><en>switch off</en><de>ausschalten</de></text>
+		<text name="string_BARRIER"><en>barrier</en><de>Schranke</de></text>
+		<text name="string_GATE"><en>gate</en><de>Tor</de></text>
+		<text name="string_DOOR"><en>door</en><de>Tür</de></text>
+		<text name="string_WICKET"><en>wicket</en><de>Gatter</de></text>
+		<text name="string_LIGHT"><en>light</en><de>Licht</de></text>
+		<text name="string_DEFAULT"><en>gate/barrier</en><de>Tor/Schranke</de></text>
+		<text name="input_OPEN_GATE"><en>Open gate</en><de>Tor öffnen</de></text>
+	</l10n>
+
+	<inputBinding>
+        <actionBinding action="OPEN_GATE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_o" />
+        </actionBinding>
+	</inputBinding>
+
+	<actions>
+		<action name="OPEN_GATE" />
+	</actions>

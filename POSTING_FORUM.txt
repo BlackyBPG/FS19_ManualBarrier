@@ -1,0 +1,81 @@
+[center][size=150][color=#00BBBB][b]Manual Barrier
+Version 1.3.1.0 | 17.12.2016
+**********************************************************[/b][/color][/size]
+[img]http://www.blackpanthergroup.de/lawisimu/fs17/logo_workshop.png[/img][/center]
+
+[center][table=730][row][col][/center][modwarning]! Hinweis !
+Dies ist zum einbauen in eine Karte vorgesehen, den Download
+einfach in den Mods-Ordner packen funktioniert NICHT ![/modwarning]
+
+[center][color=#00BBBB][b]================================================================================================
+ Was macht der denn?
+================================================================================================[/b][/color][/center]
+ManualBarrier ist für Karten-Ersteller gedacht die viele unterschiedliche Objekte auf ihrer Karte entweder manuell oder automatisch in Bewegung versetzen wollen.
+
+Egal ob nun ein Schiebetor, eine Schwingtür, eine Schranke oder gar ein komplex animiertes Objekt in Bewegung versetzt werden muss, manuell oder automatisch spielt dabei keine Rolle, oder ob es sich um einschaltbare Lichtquellen oder sonstiges handelt. Für all dies kann ManualBarrier verwendet werden.
+
+Im Grunde kann ManualBarrier für so gut wie jedes Objekt verwendet werden, naja auf jeden Fall für die meisten ;) 
+
+Und dabei ist es sehr vielfältig, alles kann miteinander kombiniert werden, ob Rotation und Bewegung oder Animation und Licht, oder auch alles zusammen, ob man nun eine alte Leuchtstoffröhre mit dem typischen Einschaltflackern haben möchte oder ein Rundumlicht bei Schiebetoröffung. Man will den Zugang zu einem Ort nur zu einer bestimmten Uhrzeit gewähren? Kein Problem, auch das kann ManualBarrier. Automatisches Hoflicht ab 20 Uhr? Warum nicht, ManualBarrier macht auch dies einfach.
+
+Selbstverständlich ist ManualBarrier auch für den Multiplayer-Modus von LS17 geeignet, jede Funktion wird dabei unterstützt.
+
+Für den genauen Einbau gibt es eine detaillierte Anleitung in Form einer PDF-Datei im Download, oder als extra Downloadobjekt in diesem Posting.
+
+Grundsätzlich setze ich jedoch Kenntnisse mit dem Giants-Editor sowie der XML-Bearbeitung voraus damit ManualBarrier Verwendung finden kann.
+
+[center][color=#00BBBB][b]================================================================================================
+ Inhalt des Paketes
+================================================================================================[/b][/color][/center]
+Im Archiv sind verschiedene Schranken, Rolltore und andere Objekte enthalten welche allesamt über ManualBarrier gesteuert werden können und bereits dafür vorbereitet sind.
+Des weiteren sind im Archiv die LiesMich (und ReadMe) enthalten die eine genaue Beschreibung der UserAttribute auflisten und die Funktionsweise dieser.
+
+[center][color=#00BBBB][b]================================================================================================
+ Features
+================================================================================================[/b][/color][/center]
+[left][list][*]manuelle oder automatische Öffnung
+[*]Rotation (Drehbewegung), Translation (Seitenbewegung), animierte Objekte, Einblendungen
+[*]verschiedene Modi für alle Objekte
+[list]
+  [*]flackern beim einschalten einer Lichtquelle
+  [*]einschaltbare Objekte nur während der Bewegung oder an/aus
+  [*]Audiowiedergabe während der Bewegung möglich
+  [*]Audiowiedergabe in Schleife bei voller Öffnung und/oder voller Schließung
+  [*]automatisches schließen nach manueller Öffnung möglich
+  [*]zeitgesteuertes Öffnen und Schließen
+  [*]Beschränkung der manuellen Öffnung auf einen bestimmten Zeitraum möglich
+  [*]Kombination mehrerer Bewegungsabläufe (Rotation,Translation,Animation) möglich
+  [*]individuelle Geschwindigkeitseinstellungen möglich
+  [*]individuelle Namensvergabe der Objekte sowie an/aus Funktionen (siehe Screenshots)
+  [*]individuelle Achsauswahl möglich, Kombinationen mehrerer Achsen ebenfalls
+  [*]speichern/laden des Öffnungszustandes von manuell gesteuerten Objekten im/vom Savegame
+  [*]zufällige Schließungen möglich (wie z.B. Zollhafen auf Hagenstedt Modified mit dem ODT)
+  [*]Reaktion auf KI-Traffic-Fahrzeuge[/list]
+  [*]Bindung an ein Feld (fieldId) ebenso möglich
+  [*]vollständig Multiplayer kompatibel[/list][/left]
+
+[center][color=#00BBBB][b]================================================================================================
+Changelog (nur LS17 betreffend, vorherige Spielversionen werden hier nicht mehr gelistet):
+================================================================================================[/b][/color][/center]
+[list][*]Version 1.3.1.0
+	[list][*]multiplayer fixed and tested (Thanks to Bauerpower939, The939Power and Luan)[/list]
+[*]Version 1.3.0.0 C
+	[list][*]smaller improvements[/list]
+[*]Version 1.3.0.0 B
+	[list][*]fix wrong variable (Thanks to tobiasgo)[/list]
+[*]Version 1.3.0.0 A
+	[list][*]add animation direction setting for reverse play animation, add audio loop functionality[/list]
+[*]Version 1.3.0.0
+	[list][*]initial version for FS17[/list][/list]
+
+[center][color=#00BBBB][b]================================================================================================
+Download:
+================================================================================================[/b][/color][/center]
+[url2=http://www.blackpanthergroup.de/lawisimu/fs17/downloads/LiesMich.pdf][color=#FFFF00]LiesMich - PDF - Deutsch[/color][/url2]
+[url2=http://www.blackpanthergroup.de/lawisimu/fs17/downloads/ReadMe.pdf][color=#FFFF00]ReadMe - PDF - English[/color][/url2]
+[size=100][color=#FFBF00](Aktualisierte ReadMe PDF-Dateien für Version 1.3.1.0)[/color][/size]
+
+[url2=http://www.blackpanthergroup.de/lawisimu/fs17/downloads/FS17_ManualBarrier.rar][b][color=#22BF22][size=150]Download 1.3.1.0[/size][/color][/b][/url2]
+[url2=http://ul.to/xzps4nc3][color=#228022][size=85]Download 1.3.1.0 - Mirror uploaded.net[/size][/color][/url2]
+[size=85][u]Größe:[/u] 8.927.192 Bytes
+[u]MD5 Checksumme:[/u] 679f56ca78beabad8ac45634b003d3ae[/size][/col][/row][/table]
