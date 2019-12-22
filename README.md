@@ -69,3 +69,9 @@ Des weiteren sind im Archiv die LiesMich (und ReadMe) enthalten die eine genaue 
 
 - ##### Version 1.9.0.1 (08.12.2019)
 - - Initial converted Release for Fs19
+
+------------
+
+------------
+
+[ManualBarrier ReadMe (DE)](https://github.com/BlackyBPG/FS19_ManualBarrier/blob/master/LiesMich.pdf "ManualBarrier ReadMe (DE)")
