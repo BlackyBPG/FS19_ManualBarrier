@@ -55,6 +55,9 @@ Des weiteren sind im Archiv die LiesMich (und ReadMe) enthalten die eine genaue 
 
 #### CHANGELOG:
 
+- ##### Version 1.9.0.6 (26.12.2019)
+- - add workaround for enterable/playerstyle error
+
 - ##### Version 1.9.0.5 (21.12.2019)
 - - fix non working farm restricted on manualOpen
 
