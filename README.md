@@ -55,6 +55,9 @@ Des weiteren sind im Archiv die LiesMich (und ReadMe) enthalten die eine genaue 
 
 #### CHANGELOG:
 
+- ##### Version 1.9.0.8 (10.02.2020)
+- - fix error with wrong query
+
 - ##### Version 1.9.0.7 (09.02.2020)
 - - add loopOnClose for animated objects
 - - add loopOnOpen for animated objects
